@@ -1,3 +1,4 @@
+$("#formContent").hide();
 
 
 $('#navClass').click(()=>{
@@ -5,7 +6,11 @@ $('#navClass').click(()=>{
 })
 
 setTimeout(()=>{
-    $("#title").addClass('fadeOut')
+    $("#title").addClass('fadeOut');
+    setTimeout(()=>{
+
+        $("#formContent").show();
+    },500)
 },2000)
 
 $(".btn-demo.inactive").click(()=>{   
@@ -31,6 +36,11 @@ $(".close").click(()=>{
     },200)
     
 })
+
+// FORM FADE IN
+// setTimeout =(() =>{
+//     $("#formContent").show();
+// },100)
 
 
 

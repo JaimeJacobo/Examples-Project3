@@ -35,27 +35,92 @@
             </li>
         </ul>   
     </nav>
-    
-    <div class="flexCentered backgroundImage">   
-       <h1 id="title" class="slideDown">Your journey begins</h1>
+    <div id="formContent" class="container fadeIn">
+        <div class="row flexCenteredWH">
+            <div class="col-md-4 col-md-pull-7">
+                <div class="booking-form">
+                    <form>
+                        <div class="form-group">
+                            <span class="form-label">Your Destination</span>
+                            <input class="form-control" type="text" placeholder="Enter a destination or hotel name">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <span class="form-label">Check In</span>
+                                    <input class="form-control" type="date" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <span class="form-label">Check out</span>
+                                    <input class="form-control" type="date" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <span class="form-label">Rooms</span>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    <span class="select-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <span class="form-label">Adults</span>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    <span class="select-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group">
+                                    <span class="form-label">Children</span>
+                                    <select class="form-control">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                    <span class="select-arrow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-btn">
+                            <button class="submit-btn">Check availability</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <div class="flexCenteredWH backgroundImage">   
+       <h1 id="title" class="slideDown">Your journey begins</h1> 
+    </div>
+    
     <!-- Modal -->
 	<div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title" id="myModalLabel2">Right Sidebar</h4>
 				</div>
-
 				<div class="modal-body">
 					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
 					</p>
 				</div>
-
 			</div><!-- modal-content -->
-		</div><!-- modal-dialog -->
+        </div><!-- modal-dialog -->
+    </div>
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
