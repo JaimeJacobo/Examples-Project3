@@ -1,0 +1,233 @@
+/* COLORS: 
+
+yellow: (248, 233, 161)
+red: (247, 108, 108)
+light blue: (168, 208, 230)
+blue: (55, 71, 133)
+blue-hard: (36, 48, 94) */
+
+
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+
+/* NAVBAR FROM BOOTSTRAP */
+a.navbar-brand {
+    float: left;
+    height: 50px;
+    margin-top: -15px;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    font-weight: 700;
+
+}
+
+nav.main-navigation {
+    position: relative;
+}
+
+nav.main-navigation ul.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    text-align: right;
+}
+
+.nav-list li.nav-list-item {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+a.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: black;
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        pointer-events: auto;
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.nav-list li {
+    animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+    animation-fill-mode: both;
+}
+
+.nav-list li:nth-child(1) {
+    animation-delay: .3s;
+}
+
+.nav-list li:nth-child(2) {
+    animation-delay: .6s;
+}
+
+.nav-list li:nth-child(3) {
+    animation-delay: .9s;
+}
+
+.nav-list li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.nav-list li:nth-child(5) {
+    animation-delay: 1.5s;
+}
+
+/* BOOSTRAP NAVBAR ANIMATION */
+/*Estos dos son para hacer el efecto del titulo entrando hacia abajo */
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 40px, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 40px, 0);
+        opacity: 1
+    }
+}
+
+.animated1 {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+/* BOOTSTRAP ANIMATION ENDS */
+
+.flexCentered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.flexCentered h1 {
+    font-size: 9.5rem;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-bottom: 400px;
+}
+
+.backgroundImage{
+    background-image: url("./background3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#list li{
+    margin: 0px;
+}
+
+#navClass{
+    /* border-bottom: 1px solid black; */
+    position: absolute;
+    width: 100vw;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.3);
+}
+
+/*******************************
+* MODAL AS LEFT/RIGHT SIDEBAR
+* Add "left" or "right" in modal parent div, after class="modal".
+* Get free snippets on bootpen.com
+*******************************/
+	.modal.right .modal-dialog {
+		position: fixed;
+		margin: auto;
+		width: 320px;
+		height: 100%;
+		-webkit-transform: translate3d(0%, 0, 0);
+		    -ms-transform: translate3d(0%, 0, 0);
+		     -o-transform: translate3d(0%, 0, 0);
+		        transform: translate3d(0%, 0, 0);
+	}
+
+	.modal.right .modal-content {
+		height: 100%;
+		overflow-y: auto;
+	}
+	
+	.modal.right .modal-body {
+		padding: 15px 15px 80px;
+	}
+
+        
+/*Right*/
+	.modal.right.fade .modal-dialog {
+		right: -320px;
+		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+		   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+		        transition: opacity 0.8s linear, right 0.8s ease-out;
+	}
+	
+	.modal.right.fade .modal-dialog.in {
+		right: 0px;
+    }
+    
+    .inactive {
+        background-color: rgba(0,0,0,0)
+    }
+
+    .btn{
+        font-size: 18px;
+    }
