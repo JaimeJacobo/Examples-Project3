@@ -8,8 +8,10 @@ $('#navClass').click(()=>{
 setTimeout(()=>{
     $("#title").addClass('fadeOut');
     setTimeout(()=>{
-
         $("#formContent").show();
+        setTimeout(()=>{
+            $("#title").hide();
+        },500)
     },500)
 },2000)
 

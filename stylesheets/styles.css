@@ -154,6 +154,11 @@ a.nav-link {
     min-height: 100vh;
 }
 
+.WH {
+    min-width: 100vw;
+    min-height: 100vh; 
+}
+
 .flexCentered {
     display: flex;
     justify-content: center;
@@ -181,6 +186,7 @@ a.nav-link {
     /* border-bottom: 1px solid black; */
     position: absolute;
     width: 100vw;
+    z-index: 10;
 }
 
 .grow {
@@ -277,7 +283,7 @@ a.nav-link {
     
     .booking-form {
         background-color: #fff;
-        padding: 50px 20px;
+        padding: 30px 20px;
         -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
         box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
         border-radius: 4px;
@@ -381,4 +387,41 @@ a.nav-link {
     .booking-cta p {
         font-size: 16px;
         color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* END OF FORM CSS */
+
+    
+    #contentAboutUs p {
+        width: 50vw;
+    }
+    
+    #aboutUs img{
+        height: 413px;
+        width: 50vw;
+    }
+
+    #titleAboutUs {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        height: 25vh;
+    }
+
+    .flexSpaceEvenlyH{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50vh;
+    }
+
+    #aboutUsFooter{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        height: 25vh;
     }
